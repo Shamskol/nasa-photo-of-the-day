@@ -13,8 +13,8 @@ import ImageCard from './ImageCard';
       
       .then(response => {
         
-        console.log(response)
-        
+        console.log(response.data)
+setImage(response.data)
         
       })
       .catch(error => {
@@ -28,7 +28,6 @@ import ImageCard from './ImageCard';
 
       <ImageCard
         title={image.title}
-        url={image.url}
         date={image.date}
         explanation={image.explanation}
         hdurl={image.hdurl}
