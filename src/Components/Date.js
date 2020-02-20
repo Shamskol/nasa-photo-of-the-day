@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Date = props => <div>Date</div>
+// const Date = props => <div>Date</div>
 
 
 
@@ -16,4 +16,4 @@ const Date = props => <div>Date</div>
 
 
 
-export default App;
+export default Date;
