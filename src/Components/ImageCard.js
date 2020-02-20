@@ -26,14 +26,17 @@ const StyledP = styled.p`
 
 export default function ImageCard(props) {
   return (
-    <div>
+    <MainTitle>
       <h1>NASA APOD: {props.title}</h1>
+      <h1>
+        Date: {props.date}
+      </h1>
       <img src={props.hdurl}  />
     
       <p>
         <strong>Description:</strong> {props.explanation}
       </p>
       
-    </div>
+    </MainTitle>
   );
 }
