@@ -22,6 +22,7 @@ const NasaImg = styled.img`
 
 const StyledP = styled.p`
   font-style: italic;
+
  `;
 
 export default function ImageCard(props) {
@@ -31,12 +32,12 @@ export default function ImageCard(props) {
       <h1>
         Date: {props.date}
       </h1>
-      <img src={props.hdurl}  />
-    
+      <NasaImg src={props.hdurl}  />
+    <StyledP>
       <p>
         <strong>Description:</strong> {props.explanation}
       </p>
-      
+      </StyledP>
     </MainTitle>
   );
 }
